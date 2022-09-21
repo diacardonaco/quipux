@@ -11,6 +11,7 @@ import javax.persistence.*;
 public class Client {
 
     @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "id_cliente")
     @Id
     private long id;
     private String typeIdentification;
