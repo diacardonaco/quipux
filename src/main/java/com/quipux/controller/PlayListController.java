@@ -27,8 +27,8 @@ public class PlayListController {
         return new ResponseEntity(playlists, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/create-playlist", method = RequestMethod.POST)
-    public ResponseEntity<PlayList> createProduct(@RequestBody PlayList playlist){
+    @RequestMapping(value = "", method = RequestMethod.POST)
+    public ResponseEntity<PlayList> createPlayList(@RequestBody PlayList playlist){
         PlayList playlistCreated = playListService.createPlayList(playlist);
         return new ResponseEntity(playlistCreated, HttpStatus.CREATED);
     }

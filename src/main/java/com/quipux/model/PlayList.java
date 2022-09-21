@@ -3,11 +3,7 @@ package com.quipux.model;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Set;
-
 import javax.persistence.*;
 
 @Entity

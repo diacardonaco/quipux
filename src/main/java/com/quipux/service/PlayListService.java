@@ -1,5 +1,6 @@
 package com.quipux.service;
 
+import com.quipux.model.Cancion;
 import com.quipux.model.PlayList;
 import com.quipux.repository.PlayListRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,8 @@ public class PlayListService {
     @Autowired
     private PlayListRepository playListRepository;
 
-    public PlayList createPlayList(PlayList playList){
+    public PlayList createPlayList(PlayList playList) {
+        playList.getCanciones().forEach((Cancion cancion) -> System.out.println(cancion));
         return playListRepository.save(playList);
     }
 
